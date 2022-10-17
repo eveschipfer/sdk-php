@@ -1,14 +1,10 @@
-# Mercado Pago SDK for PHP
-
-[![Latest Stable Version](https://poser.pugx.org/mercadopago/dx-php/v/stable)](https://packagist.org/packages/mercadopago/dx-php)
-[![Total Downloads](https://poser.pugx.org/mercadopago/dx-php/downloads)](https://packagist.org/packages/mercadopago/dx-php)
-[![License](https://poser.pugx.org/mercadopago/dx-php/license)](https://packagist.org/packages/mercadopago/dx-php)
+# Mercado Pago Non Official SDK for PHP 7.4
 
 This library provides developers with a simple set of bindings to help you integrate Mercado Pago API to a website and start receiving payments.
 
 ## 💡 Requirements
 
-PHP 5.6, 7.1 or higher
+PHP 7.4+
 
 ## 💻 Installation 
 
@@ -17,7 +13,7 @@ First time using Mercado Pago? Create your [Mercado Pago account](https://www.me
 1. Download [Composer](https://getcomposer.org/doc/00-intro.md) if not already installed
 
 2. On your project directory run on the command line
-`composer require "mercadopago/dx-php:2.5.1"` for PHP7 or `composer require "mercadopago/dx-php:1.12.5"` for PHP5.6.
+`composer require "eveschipfer/sdk-mp"` for PHP7.4+
 
 3. Copy the access_token in the [credentials](https://www.mercadopago.com/mlb/account/credentials) section of the page and replace YOUR_ACCESS_TOKEN with it.
 

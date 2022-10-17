@@ -1,22 +1,21 @@
 {
-  "name": "mercadopago/dx-php",
+  "name": "eveschipfer/sdk-mp",
   "description": "Mercado Pago PHP SDK",
   "type": "library",
-  "homepage": "https://github.com/mercadopago/sdk-php",
+  "homepage": "https://github.com/eveschipfer/sdk-php",
   "license": "MIT",
-  "version": "2.5.1",
+  "version": "1.0.0",
   "config": {
     "platform": {
-        "php": "7.1"
+        "php": "8.1"
     }
   },
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=8.1",
     "doctrine/common": "^2.6 || ^3.0",
     "doctrine/annotations": "^1.8"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7",
     "symfony/yaml": "~2.5",
     "phpmd/phpmd": "@stable",
     "squizlabs/php_codesniffer": "2.8.1",
@@ -27,16 +26,9 @@
   "autoload": {
     "psr-4": {
       "MercadoPago\\": [
-        "src/MercadoPago/",
-        "tests/",
-        "src/MercadoPago/Generic/",
-        "src/MercadoPago/Entities/",
-        "src/MercadoPago/Entities/Shared/"
+        "src/MercadoPago/"
       ]
     }
-  },
-  "scripts": {
-    "test": "./vendor/bin/phpunit --testdox --colors=auto tests"
   },
   "repositories": [
     {
