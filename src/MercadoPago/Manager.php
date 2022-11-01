@@ -243,13 +243,18 @@ class Manager
         $className = $this->_getEntityClassName($entity);
         $result = [];
 
-        $last_attributes = $entity->_last->toArray();
         $new_attributes = $entity->toArray();
 
-        $result = $this->_arrayDiffRecursive($last_attributes, $new_attributes);
+        if ($entity->_last) {
+            $last_attributes = $entity->_last->toArray();
+            $result = $this->_arrayDiffRecursive($last_attributes, $new_attributes);
+        } else {
+            $result = $new_attributes;
+        }
 
-        $this->_entityConfiguration[$className]->query['json_data'] = json_encode($result); 
+        $this->_entityConfiguration[$className]->query['json_data'] = json_encode($result);
     }
+
     /**
      * @param $configuration
      */
