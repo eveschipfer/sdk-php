@@ -3,6 +3,7 @@ namespace MercadoPago;
 use MercadoPago\Annotation\Attribute;
 use Exception;
 use MercadoPago\Generic\RecuperableError;
+use MercadoPago\Generic\SearchResultsArray;
 
 /**
  * Class Entity
